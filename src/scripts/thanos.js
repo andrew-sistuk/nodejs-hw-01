@@ -3,8 +3,6 @@ import { v4 as uuidv4 } from 'uuid';
 import { PATH_DB, API_RANODM_ORG } from '../constants/contacts.js';
 import axios from 'axios';
 
-// знаю що ймовірність не 50%, але з Math.random було надто сумно робити
-// тому мій антагоніст значно жорстокіший
 axios.defaults.baseURL = 'https://api.random.org/json-rpc/2';
 
 const Gauntlet = async (number) => {
