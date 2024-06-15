@@ -20,7 +20,6 @@ const Gauntlet = async (number) => {
   };
 
   const result = await axios.post('/invoke', options);
-  console.log(result.data.result.random.data);
   return result.data.result.random.data;
 };
 
